@@ -1,6 +1,7 @@
 /* This class represents a DAG
  * 
  * ©Michael Wilson */
+
 public class Edge {
    /* The two vertices for the edge */
    Vertex src, dest;
@@ -13,7 +14,7 @@ public class Edge {
     * @param src The source vertex
     * @param dest The destination vertex */
    public Edge(Vertex src, Vertex dest) {
-      this(src, dest, 0)
+      this(src, dest, 0);
    }
    
    /* Constructs a weighted edge 
@@ -40,3 +41,4 @@ public class Edge {
    public int getCost() {
       return cost;
    }
+}

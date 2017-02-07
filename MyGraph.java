@@ -1,3 +1,8 @@
+/* This class represents a graph 
+ * 
+ * ©Michael Wilson */
+import java.util.*;
+
 public class MyGraph {
    /* The private fields of the graph */
    Set<Vertex> vertices;

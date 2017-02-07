@@ -1,6 +1,8 @@
 /* Class that represents a vertex for a graph
  * 
  * ©Michael Wilson */
+import java.util.*; 
+ 
 public class Vertex {
    /* The identification of the vertex */
    String id;
@@ -32,6 +34,11 @@ public class Vertex {
    /* Returns the neighbors of this vertex */
    public List<Vertex> getNeighbors() {
       return myNeighbors;
+   }
+   
+   /* Method that sets up the list of neighbors */
+   public void setNeighbors(List<Vertex> neighbors) {
+      myNeighbors = neighbors;
    }
    
 }
