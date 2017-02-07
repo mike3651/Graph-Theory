@@ -5,8 +5,8 @@ import java.util.*;
 
 public class MyGraph {
    /* The private fields of the graph */
-   Set<Vertex> vertices;
-   Set<Edge> edges;
+   private Set<Vertex> vertices;
+   private Set<Edge> edges;
    
    
    /* Initializes a graph
@@ -16,5 +16,15 @@ public class MyGraph {
    public MyGraph(Set<Vertex> V, Set<Edge> E) {
       vertices = V;
       edges = E;
-   }   
+   }
+   
+   /* Returns the set of vertices */
+   public Set<Vertex> getVertices() {
+      return vertices;
+   }
+   
+   /* Returns the set of edges */   
+   public Set<Edge> getEdges() {
+      return edges;
+   }
 }

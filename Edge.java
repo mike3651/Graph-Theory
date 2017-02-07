@@ -4,10 +4,10 @@
 
 public class Edge {
    /* The two vertices for the edge */
-   Vertex src, dest;
+   private Vertex src, dest;
    
    /* The cost associated with the edge */
-   int cost;
+   private int cost;
    
    /* Constructs an edge between two vertices
     * 
