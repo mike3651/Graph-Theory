@@ -15,6 +15,9 @@ public class Driver {
    
    /* Keeps track of the graph */
    static MyGraph graph;
+   
+   /* Keeps track of are RNG */
+   static Random rand = new Random();
 
    public static void main(final String[] theArgs) {
       myVertices = new ArrayList<Vertex>();
@@ -22,6 +25,9 @@ public class Driver {
       createVertices();
       createEdges();
       graph = new MyGraph(myVertices, myEdges);
+      // select a random vertex
+      Vertex start = myVertices.get(rand.nextInt(myVertices.size()));
+      graph.updateDistances(start);
    }   
    
    /* Method that creates a bunch of vertices */
@@ -44,7 +50,6 @@ public class Driver {
    /* Method that generates random edges */
    private static void createEdges() {
       // used for selecting a random vertex
-      Random rand = new Random();
       for(int i = 0; i < 10; i++) {
          Vertex src = myVertices.get(rand.nextInt(myVertices.size()));
          Vertex dest = myVertices.get(rand.nextInt(myVertices.size()));
