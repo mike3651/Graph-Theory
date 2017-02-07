@@ -12,12 +12,16 @@ public class Driver {
    
    /* List of Edges */
    static List<Edge> myEdges;
+   
+   /* Keeps track of the graph */
+   static MyGraph graph;
 
    public static void main(final String[] theArgs) {
       myVertices = new ArrayList<Vertex>();
       myEdges = new ArrayList<Edge>();
       createVertices();
       createEdges();
+      graph = new MyGraph(myVertices, myEdges);
    }   
    
    /* Method that creates a bunch of vertices */
